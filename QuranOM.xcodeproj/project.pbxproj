@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5971465C2CA0B260004E8B8F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 5971465B2CA0B260004E8B8F /* GoogleMobileAds */; };
+		59DB8E9E2CA21B0D0031ED3D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DB8E9C2CA20BB70031ED3D /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5973E8CA2C9FD5AD0060D5C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +32,45 @@
 		5973E8B92C9FD5AC0060D5C1 /* QuranOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuranOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5973E8C92C9FD5AD0060D5C1 /* QuranOMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuranOMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5973E8D32C9FD5AD0060D5C1 /* QuranOMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuranOMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DB8E9C2CA20BB70031ED3D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5973E9012C9FF3530060D5C1 /* Exceptions for "QuranOM" folder in "QuranOMTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Fonts/BalooBhaijaan2-VariableFont_wght.ttf",
+				"Fonts/Marhey-VariableFont_wght.ttf",
+				"Fonts/NotoNaskhArabic-VariableFont_wght.ttf",
+			);
+			target = 5973E8C82C9FD5AD0060D5C1 /* QuranOMTests */;
+		};
+		5973E9022C9FF3530060D5C1 /* Exceptions for "QuranOM" folder in "QuranOMUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Fonts/BalooBhaijaan2-VariableFont_wght.ttf",
+				"Fonts/Marhey-VariableFont_wght.ttf",
+				"Fonts/NotoNaskhArabic-VariableFont_wght.ttf",
+			);
+			target = 5973E8D22C9FD5AD0060D5C1 /* QuranOMUITests */;
+		};
+		5973E9042C9FF3680060D5C1 /* Exceptions for "QuranOM" folder in "QuranOM" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5973E8B82C9FD5AC0060D5C1 /* QuranOM */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5973E8BB2C9FD5AC0060D5C1 /* QuranOM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5973E9042C9FF3680060D5C1 /* Exceptions for "QuranOM" folder in "QuranOM" target */,
+				5973E9012C9FF3530060D5C1 /* Exceptions for "QuranOM" folder in "QuranOMTests" target */,
+				5973E9022C9FF3530060D5C1 /* Exceptions for "QuranOM" folder in "QuranOMUITests" target */,
+			);
 			path = QuranOM;
 			sourceTree = "<group>";
 		};
@@ -52,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5971465C2CA0B260004E8B8F /* GoogleMobileAds in Frameworks */,
+				59DB8E9E2CA21B0D0031ED3D /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +119,7 @@
 				5973E8BB2C9FD5AC0060D5C1 /* QuranOM */,
 				5973E8CC2C9FD5AD0060D5C1 /* QuranOMTests */,
 				5973E8D62C9FD5AD0060D5C1 /* QuranOMUITests */,
+				59DB8E9B2CA20BB70031ED3D /* Frameworks */,
 				5973E8BA2C9FD5AC0060D5C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +132,14 @@
 				5973E8D32C9FD5AD0060D5C1 /* QuranOMUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		59DB8E9B2CA20BB70031ED3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DB8E9C2CA20BB70031ED3D /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +162,7 @@
 			);
 			name = QuranOM;
 			packageProductDependencies = (
+				5971465B2CA0B260004E8B8F /* GoogleMobileAds */,
 			);
 			productName = QuranOM;
 			productReference = 5973E8B92C9FD5AC0060D5C1 /* QuranOM.app */;
@@ -195,6 +246,9 @@
 			);
 			mainGroup = 5973E8B02C9FD5AC0060D5C1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5971465A2CA0B260004E8B8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5973E8BA2C9FD5AC0060D5C1 /* Products */;
 			projectDirPath = "";
@@ -394,11 +448,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"QuranOM/Preview Content\"";
 				DEVELOPMENT_TEAM = 4LVL647LQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuranOM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuranOM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deenod.QuranOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -423,11 +480,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"QuranOM/Preview Content\"";
 				DEVELOPMENT_TEAM = 4LVL647LQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuranOM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuranOM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,7 +497,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deenod.QuranOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5971465A2CA0B260004E8B8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5971465B2CA0B260004E8B8F /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5971465A2CA0B260004E8B8F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5973E8B12C9FD5AC0060D5C1 /* Project object */;
 }
